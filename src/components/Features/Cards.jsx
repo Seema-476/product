@@ -1,14 +1,12 @@
 import React from 'react'
 import { PARAMS_DATA } from '../../utils/Helper'
-import Heading from '../../common/Heading'
-import Description from '../../common/Description'
 import { useParams, useLocation } from 'react-router-dom';
 import { Route, Routes, Link } from 'react-router-dom';
 
 const Cards = () => {
     return (
         <div className='bg-dark-blue'>
-            <div className="container pb-5">
+            <div className="container max-w-1440 pb-5">
                 <h2 className='product mb-0 text-center'>Cards</h2>
                 <div className="row g-4 justify-center items-center">
                     {Object.keys(PARAMS_DATA).map((key) => (

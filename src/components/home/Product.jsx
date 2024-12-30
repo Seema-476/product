@@ -5,7 +5,7 @@ import Description from '../../common/Description'
 
 const Product = () => {
     return (
-        <div className='container max-w-1440'>
+        <div className='container max-w-1440 pt-5'>
             <div className='flex items-center gap-4 max-w-1128 justify-center mx-auto product-clause'>
                 <div className='product-card bg-purple h-100 w-100'>
                     <div>
