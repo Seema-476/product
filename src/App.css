@@ -170,6 +170,13 @@ body {
         background-color: white;
         padding: 27px;
     }
+    .back-to-top{
+      border: 1px solid white;
+      margin-left: auto;
+      right: 12px;
+      bottom: 12px;
+      border-radius: 6px;
+    }
 
 @media(max-width:1279.98px) {
   .product-clause {

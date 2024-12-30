@@ -6,6 +6,7 @@ import Home from './components/view/Home'
 import About from './components/view/About';
 import Features from './components/view/Features'
 import Cards from './components/Features/Cards';
+import BackToTop from './common/BackToTop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/params' element={<Cards />} />
         </Routes>
       </BrowserRouter>
+      <BackToTop/>
     </>
   );
 }
