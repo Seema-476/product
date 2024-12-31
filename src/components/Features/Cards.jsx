@@ -1,61 +1,35 @@
-import React from 'react'
-import { PARAMS_DATA } from '../../utils/Helper'
-import { useParams, useLocation } from 'react-router-dom';
-import { Route, Routes, Link } from 'react-router-dom';
+import React from 'react';
+import { useSearchParams } from 'react-router';
+import { CARD_DATA } from '../../utils/Helper';
 
 const Cards = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const handleClick = (card) => {
+        setSearchParams({ card: card.replace(/ /g, '-') });
+    };
+
+    const selectedCard = searchParams.get('card');
+
     return (
         <div className='bg-dark-blue'>
-            <div className="container max-w-1440 pb-5">
-                <h2 className='product mb-0 text-center'>Cards</h2>
-                <div className="row g-4 justify-center items-center">
-                    {Object.keys(PARAMS_DATA).map((key) => (
-                        <div key={key} className="col-12 col-sm-6 col-md-4">
-                            <Link
-                                to={`/map-card/${key}`}
-                                state={PARAMS_DATA[key]}
-                                className="card-link text-decoration-none">
-                                <div className="card h-100 bg-purple">
-                                    <div className="card-body">
-                                        <h3 className="description mb-0 pb-3">{PARAMS_DATA[key].title}</h3>
-                                        <p className="description mb-0">{PARAMS_DATA[key].text}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
-                <Routes>
-                    <Route path="/map-card/:id" element={<MapPage />} />
-                </Routes>
-            </div>
+            <div className="container row gap-3 mx-auto py-5">
+                <h2 className='product text-center'>Card Params</h2>
+                {CARD_DATA.map((card, i) => (
+                        <div key={i}
+                            onClick={() => handleClick(card.heading)}
+                            className={`card p-3 w-50 mx-auto ${selectedCard === card.heading.replace(/ /g, '-') ? 'bg-dark-green' : ''}`}>
+                            <h2 className={`text-center cursor-pointer description mx-auto ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`} >
+                                {card.heading}
+                            </h2>
+                        <p className={`text-center cursor-pointer description mx-auto ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`}>
+                {card.description}
+            </p>
         </div>
+                ))}
+            </div >
+        </div >
     );
 };
 
-const MapPage = () => {
-    const { id } = useParams();
-    const location = useLocation();
-    let data = location.state || PARAMS_DATA[id];
-
-    if (!data) {
-        return (
-            <div className="container text-center mt-5">
-                <h2 className="text-danger">No data available</h2>
-                <Link to="/" className="btn btn-primary mt-3">
-                    Go Back to Cards
-                </Link>
-            </div>
-        );
-    }
-
-    return (
-        <div className="container mt-5">
-            <h2 className="text-primary">{data.title}</h2>
-            <p>{data.description}</p>
-            <Link to="/" className="btn btn-secondary mt-3">Back to All Cards</Link>
-        </div>
-    );
-};
-
-export default Cards
+export default Cards;

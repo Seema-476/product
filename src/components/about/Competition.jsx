@@ -35,7 +35,7 @@ const Competition = () => {
         <div className="col-12 col-lg-6 table-bg d-flex border-radius-xl align-items-center justify-content-center sm-py-xl overflow-hidden">
           <div className="d-flex align-items-center justify-content-center w-100">
             <div className="table-responsive">
-              <table className="custom-table-bg py-5">
+              <table className="custom-table-bg py-xl-5 py-3">
                 <thead>
                   <tr>
                     <th class=" d-sm-table-cell"></th>
@@ -48,7 +48,7 @@ const Competition = () => {
                 <tbody>
                   {COMPETITION_LIST.map((item, i) => (
                     <tr key={i}>
-                      <td className={`text-white fw-normal Competition-td bg-transparent border-b-none ${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
+                      <td className={`text-white fw-normal Competition-td bg-transparent border-b-none${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
                       <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.rift}</td>
                       <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.taxscout}</td>
                       <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''}`}>{item.coconut}</td>

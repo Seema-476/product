@@ -1,17 +1,19 @@
-export const PARAMS_DATA = {
-    "card-one": {
-        title: 'Lorem ipsum',
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque."
+export const CARD_DATA = [
+    {
+        heading: 'Card 1',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
-    "card-two": {
-        title: 'Lorem ipsum',
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque."
+
+    {
+        heading: 'Card 2',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
-    "card-three": {
-        title: 'Lorem ipsum',
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque."
+
+    {
+        heading: 'Card 3',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     }
-};
+];
 export const COMPETITION_LIST = [
     {
         brand: "Mobile App",

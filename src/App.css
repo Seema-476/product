@@ -29,7 +29,7 @@ body {
 }
 
 .product-card {
-  padding: 16px 26px;
+  padding: 16px 20px;
   border-radius: 16px;
 }
 
@@ -63,21 +63,21 @@ body {
 
 .product {
   color: white;
-  font-size: 46px;
-  line-height: 59.8px;
-  padding-bottom: 30px;
+  font-size: 36px;
+  line-height: 49.8px;
+  padding-bottom: 25px;
 }
 
 .description {
   color: white;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /* grid */
 .grid-bg {
   border-radius: 16px;
-  padding: 26px;
+  padding: 20px;
 }
 
 .grid-box {
@@ -480,19 +480,33 @@ thead tr th {
 
 @media(min-width:1024px) {
   .product {
-      padding-bottom: 50px;
-    }
+    padding-bottom: 50px;
+    font-size: 46px;
+    line-height: 59.8px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .competition-para {
-      max-width: 481.82px !important;
-    }
+    max-width: 481.82px !important;
+  }
+
   .product-card {
     max-width: 400.23px;
     min-height: 666px;
+    padding: 26px;
   }
+    .product-card {
+      padding: 16px 26px;
+    }
 
   .grid-bg {
     max-width: 674.85px;
     min-height: 666px;
+    padding: 26px;
   }
 }
 
