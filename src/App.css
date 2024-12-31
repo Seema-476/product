@@ -65,7 +65,7 @@ body {
   color: white;
   font-size: 46px;
   line-height: 59.8px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .description {
@@ -205,9 +205,6 @@ body {
   width: 100%;
 }
 
-/*  /
-    
-    / Works  */
 .competition-table {
   width: 100%;
   border-collapse: collapse;
@@ -482,6 +479,12 @@ thead tr th {
 }
 
 @media(min-width:1024px) {
+  .product {
+      padding-bottom: 50px;
+    }
+  .competition-para {
+      max-width: 481.82px !important;
+    }
   .product-card {
     max-width: 400.23px;
     min-height: 666px;
