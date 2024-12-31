@@ -177,6 +177,157 @@ body {
       bottom: 12px;
       border-radius: 6px;
     }
+        .competition {
+          padding-top: 143.17px;
+          padding-bottom: 143.17px;
+        }
+    
+    
+        .gap-78 {
+          display: flex;
+          gap: 78.36px;
+        }
+    
+        .competition-container {
+          max-width: 1160px !important;
+          margin: 0 auto;
+          width: 100%;
+          padding: 0 15px;
+        }
+    
+        .competition-text {
+          max-width: 481px;
+          width: 100%;
+        }
+    
+        /*  /
+    
+    / Works  */
+        .competition-table {
+          width: 100%;
+          border-collapse: collapse;
+          background-color: #026070;
+        }
+    
+        .second-heading {
+          font-size: 46px;
+          font-weight: 600;
+          line-height: 59.8px;
+          padding-bottom: 50px;
+        }
+    
+        .custom-max-w {
+          max-width: 481px !important;
+        }
+    
+        .border-radius-xl {
+          border-radius: 12px;
+        }
+    
+        .table-bg {
+          background-color: #026070;
+        }
+    
+        .border-b {
+          border-bottom: 0.75px solid #000000;
+        }
+    
+        .table-parent {
+          justify-content: space-around;
+        }
+    
+        .cards-img {
+          width: 320px;
+          height: 555px;
+          object-fit: cover;
+        }
+    
+        .max-w-sm {
+          max-width: 95px !important;
+        }
+    
+        .table-heading {
+          font-size: 12px;
+          line-height: 15.6px;
+          color: #000000;
+          padding: 27px 19px !important;
+          width: 95px !important;
+          font-weight: 600;
+        }
+    
+        .custom-table-bg {
+          background: #026070 !important;
+          border-radius: 12px !important;
+        }
+    
+        .bg-dark-aqua {
+          background-color: #56E3CB !important;
+        }
+    
+    
+        .custom-table-bg {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 10px 0;
+        }
+    
+    
+        .Competition-td {
+          padding: 18px 21px;
+          background-color: #fff;
+          border-top: 0.75px solid #000000;
+          border-bottom: 0.75px solid #000000;
+        }
+                .Competition-td:last-child {
+                  background-color: #e8f5e9;
+                }
+        
+                .table-heading {
+                  padding: 12px 15px;
+                }
+        
+                table th:first-child,
+                table td:first-child {
+                  border-left: none;
+                }
+        
+                .x-radius-top {
+                  border-top-left-radius: 6px !important;
+                  border-top-right-radius: 6px !important;
+                }
+        
+                .x-radius-bottom {
+                  border-bottom-left-radius: 6px !important;
+                  border-bottom-right-radius: 6px !important;
+                }
+        
+                thead tr th {
+                  padding: 12px 15px;
+                }
+        
+                .border-b-none {
+                  border-bottom: none !important;
+                }
+        
+        
+                .fee-heading {
+                  font-size: 8px;
+                  max-width: 64px;
+                }
+        
+        
+                .use-effect-text {
+                  font-size: 24px;
+                }
+        
+                .cursor-pointer {
+                  cursor: pointer;
+                }
+        
+                .px-sm {
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
 
 @media(max-width:1279.98px) {
   .product-clause {
