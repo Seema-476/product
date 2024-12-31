@@ -279,6 +279,9 @@ body {
   background-color: #fff;
   border-top: 0.75px solid #000000;
   border-bottom: 0.75px solid #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
 }
 
 .Competition-td:last-child {
@@ -316,6 +319,8 @@ thead tr th {
 .fee-heading {
   font-size: 8px;
   max-width: 64px;
+  line-height: 9.6px;
+  font-weight: 400;
 }
 
 
@@ -343,11 +348,11 @@ thead tr th {
 }
 
 @media(min-width:640px) {
-  .max-w-100 {
+  .small-image {
     max-width: 100.48px;
   }
 
-  .max-w-203 {
+  .large-image {
     max-width: 203.03px;
   }
 

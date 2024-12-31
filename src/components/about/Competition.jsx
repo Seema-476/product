@@ -5,7 +5,7 @@ import Description from '../../common/Description';
 
 const Competition = () => {
   return (
-    <div className='min-vh-100 py-5 d-flex competition-section justify-content-center align-items-center bg-dark-blue'>
+    <div className='py-5 d-flex competition-section justify-content-center align-items-center bg-dark-blue'>
       <div className='competition-container row row-gap-4'>
         <div className='col-lg-6 col-12 d-flex justify-content-center flex-column'>
           <Heading

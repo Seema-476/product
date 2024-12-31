@@ -1,4 +1,4 @@
-export const CARD_DATA = [
+export const CARDS_DATA = [
     {
         heading: 'Card 1',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'

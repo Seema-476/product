@@ -30,20 +30,22 @@ const Counter = () => {
 
   return (
       <div className='container max-w-1440 pt-5'>
-          <h3 className='product mb-0'>Increment Decrement</h3>
+          <h3 className='product mb-0 mx-auto text-center'>Usestate</h3>
           <div className='text-center'>
               <p className='description mb-0 text-center mx-auto pb-3'>{ value}</p>
-              <button onClick={increment}>Increment</button>
-              <button onClick={decrement}>decrement</button>
+              <div className='flex justify-center gap-2'>
+                  <button className='p-2' onClick={increment}>Increment</button>
+                  <button className='p-2' onClick={decrement}>decrement</button>
+              </div>
           </div>
 
           <div className='text-center'>
-              <p className='product pt-5 mb-0'>Timer</p>
+              <p className='product pt-5 mb-0'>UseEffect</p>
               <p className='description mb-0 text-center mx-auto'>{count}</p>
           </div>
 
           <div className='text-center'>
-              <p className='product pt-5 mb-0 '>Count</p>
+              <p className='product pt-5 mb-0 '>For Loop</p>
               <p className='description mb-0 text-center mx-auto'>{number}</p>
           </div>
     </div>
