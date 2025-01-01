@@ -33,7 +33,7 @@ body {
   border-radius: 16px;
 }
 
-.max-w-1440 {
+.container-width {
   max-width: 1440px;
 }
 
@@ -62,14 +62,12 @@ body {
 }
 
 .product {
-  color: white;
   font-size: 36px;
   line-height: 49.8px;
   padding-bottom: 25px;
 }
 
 .description {
-  color: white;
   font-size: 14px;
   line-height: 20px;
 }
@@ -158,22 +156,6 @@ body {
 }
 
 /* table */
-.table-bg {
-  background-color: #026070;
-  max-width: 580px;
-  padding: 51.62px 20.69px 52.47px 16.82px;
-  border-radius: 12.03px;
-}
-
-.table-head {
-  color: black;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 15.6px;
-  background-color: white;
-  padding: 27px;
-}
-
 .back-to-top {
   border: 1px solid white;
   margin-left: auto;
@@ -186,7 +168,6 @@ body {
   padding-top: 143.17px;
   padding-bottom: 143.17px;
 }
-
 
 .gap-78 {
   display: flex;
@@ -251,7 +232,6 @@ body {
 .table-heading {
   font-size: 12px;
   line-height: 15.6px;
-  color: #000000;
   padding: 27px 19px !important;
   width: 95px !important;
   font-weight: 600;
@@ -266,17 +246,14 @@ body {
   background-color: #56E3CB !important;
 }
 
-
 .custom-table-bg {
   width: 100%;
   border-collapse: separate;
   border-spacing: 10px 0;
 }
 
-
 .Competition-td {
   padding: 18px 21px;
-  background-color: #fff;
   border-top: 0.75px solid #000000;
   border-bottom: 0.75px solid #000000;
     font-size: 14px;
@@ -315,14 +292,12 @@ thead tr th {
   border-bottom: none !important;
 }
 
-
 .fee-heading {
   font-size: 8px;
   max-width: 64px;
   line-height: 9.6px;
   font-weight: 400;
 }
-
 
 .use-effect-text {
   font-size: 24px;
@@ -335,16 +310,6 @@ thead tr th {
 .px-sm {
   padding-left: 0 !important;
   padding-right: 0 !important;
-}
-
-@media(max-width:1023.98px) {
-  .product-clause {
-    flex-direction: column;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
 }
 
 @media(min-width:640px) {
@@ -480,7 +445,6 @@ thead tr th {
     grid-row: 3/4;
     grid-column: 5/7;
   }
-
 }
 
 @media(min-width:1024px) {
@@ -530,5 +494,14 @@ thead tr th {
 
   .max-w-481 {
     max-width: 481px;
+  }
+}
+@media(max-width:1023.98px) {
+  .product-clause {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
   }
 }

@@ -39,19 +39,19 @@ const Competition = () => {
                 <thead>
                   <tr>
                     <th></th>
-                    <th className="x-radius-top text-center bg-white table-heading">Rift</th>
-                    <th className="x-radius-top text-center bg-white table-heading">Taxscout</th>
-                    <th className="x-radius-top text-center bg-white table-heading">Coconut</th>
-                    <th className="x-radius-top text-center bg-dark-aqua table-heading">Pie</th>
+                    <th className="x-radius-top text-center bg-white text-black table-heading">Rift</th>
+                    <th className="x-radius-top text-center bg-white text-black table-heading">Taxscout</th>
+                    <th className="x-radius-top text-center bg-white text-black table-heading">Coconut</th>
+                    <th className="x-radius-top text-center bg-dark-aqua text-black table-heading">Pie</th>
                   </tr>
                 </thead>
                 <tbody>
                   {COMPETITION_LIST.map((item, i) => (
                     <tr key={i}>
-                      <td className={`text-white fw-normal Competition-td bg-transparent border-b-none${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
-                      <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.rift}</td>
-                      <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.taxscout}</td>
-                      <td className={`bg-white Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''}`}>{item.coconut}</td>
+                      <td className={`text-white fw-normal Competition-td bg-white bg-transparent border-b-none${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
+                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.rift}</td>
+                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.taxscout}</td>
+                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''}`}>{item.coconut}</td>
                       <td className={`bg-dark-aqua Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom px-sm' : ''}`}>{item.pie}</td>
                     </tr>
                   ))}
