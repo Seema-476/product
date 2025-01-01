@@ -6,7 +6,7 @@ const Cards = () => {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const handleClick = (card) => {
-        setSearchParams({ card: card.replace(/ /g, '-') });
+        setSearchParams({ card: card.replace(/ /g, '-').toLowerCase() });
     };
 
     const selectedCard = searchParams.get('card');
@@ -14,15 +14,15 @@ const Cards = () => {
     return (
         <div className='bg-dark-blue'>
             <div className="container row gap-3 mx-auto py-5">
-                <h2 className='product text-center'>Card Params</h2>
+                <h2 className='product text-center text-white'>Card Params</h2>
                 {CARDS_DATA.map((card, i) => (
                         <div key={i}
                             onClick={() => handleClick(card.heading)}
                         className={`card p-3 w-50 mx-auto cursor-pointer ${selectedCard === card.heading.replace(/ /g, '-') ? 'bg-dark-green' : ''}`}>
-                            <h2 className={`text-center description mx-auto ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`} >
+                        <h2 className={`text-center description mx-auto text-white ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`} >
                                 {card.heading}
                             </h2>
-                        <p className={`text-center cursor-pointer description mx-auto ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`}>
+                        <p className={`text-center cursor-pointer description mx-auto text-white ${selectedCard === card.heading.replace(/ /g, '-') ? 'text-white' : ''}`}>
                 {card.description}
             </p>
         </div>
