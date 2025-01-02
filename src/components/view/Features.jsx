@@ -3,9 +3,7 @@ import Cards from '../Features/Cards'
 
 const Features = () => {
   return (
-    <>
       <Cards />
-    </>
   )
 }
 

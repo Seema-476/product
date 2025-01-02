@@ -11,14 +11,10 @@ const Counter = () => {
         setValue(value - 1);
     };
     useEffect(() => {
-        if (count >= 100) {
-            setTimeout(false);
-            return
-        }
         setTimeout(() => {
-            setCount((count) => count + 1);
-        }, 1000);
-    },);
+            setCount(count + 1 === 101 ? 100 : count + 1)
+        }, 1000)
+    }, [count])
 
     useEffect(() => {
         for (let i = 9; i >= 0; i--) {
@@ -33,7 +29,7 @@ const Counter = () => {
           <h3 className='product mb-0 mx-auto text-center text-white'>Usestate</h3>
           <div className='text-center'>
               <p className='description mb-0 text-center mx-auto pb-3 text-white'>{ value}</p>
-              <div className='flex justify-center gap-2'>
+              <div className='d-flex justify-content-center gap-2'>
                   <button className='p-2' onClick={increment}>Increment</button>
                   <button className='p-2' onClick={decrement}>decrement</button>
               </div>

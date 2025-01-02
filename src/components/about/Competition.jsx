@@ -5,7 +5,7 @@ import Description from '../../common/Description';
 
 const Competition = () => {
   return (
-    <div className='py-5 d-flex competition-section justify-content-center align-items-center bg-dark-blue'>
+    <div className='py-lg-0 py-5 min-vh-100 d-flex competition-section justify-content-center align-items-center bg-dark-blue'>
       <div className='competition-container row row-gap-4'>
         <div className='col-lg-6 col-12 d-flex justify-content-center flex-column'>
           <Heading
@@ -32,10 +32,10 @@ const Competition = () => {
             }
           />
         </div>
-        <div className="col-12 col-lg-6 table-bg d-flex border-radius-xl align-items-center justify-content-center sm-py-xl overflow-hidden">
+        <div className="col-12 col-lg-6 table-bg d-flex border-radius-xl align-items-center justify-content-center overflow-hidden">
           <div className="d-flex align-items-center justify-content-center w-100">
             <div className="table-responsive">
-              <table className="custom-table-bg py-xl-5 py-3">
+              <table className="custom-table-bg">
                 <thead>
                   <tr>
                     <th></th>
@@ -48,11 +48,11 @@ const Competition = () => {
                 <tbody>
                   {COMPETITION_LIST.map((item, i) => (
                     <tr key={i}>
-                      <td className={`text-white fw-normal Competition-td bg-white bg-transparent border-b-none${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
-                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.rift}</td>
-                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.taxscout}</td>
-                      <td className={`bg-white Competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''}`}>{item.coconut}</td>
-                      <td className={`bg-dark-aqua Competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom px-sm' : ''}`}>{item.pie}</td>
+                      <td className={`text-white fw-normal competition-td bg-white bg-transparent border-b-none${i === 3 ? 'max-w-sm' : ''}`}>{item.brand}</td>
+                      <td className={`bg-white competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.rift}</td>
+                      <td className={`bg-white competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''} `}>{item.taxscout}</td>
+                      <td className={`bg-white competition-td border-b-none bg-white text-center fee-heading ${i === 5 ? 'x-radius-bottom ' : ''}`}>{item.coconut}</td>
+                      <td className={`bg-dark-aqua competition-td border-b-none text-center fee-heading ${i === 5 ? 'x-radius-bottom px-sm' : ''}`}>{item.pie}</td>
                     </tr>
                   ))}
                 </tbody>

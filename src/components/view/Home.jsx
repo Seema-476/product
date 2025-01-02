@@ -3,9 +3,7 @@ import Product from '../home/Product'
 
 const Home = () => {
   return (
-      <>
           <Product />
-      </>
   )
 }
 

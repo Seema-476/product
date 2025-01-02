@@ -14,7 +14,7 @@ const Cards = () => {
     return (
         <div className='bg-dark-blue'>
             <div className="container row gap-3 mx-auto py-5">
-                <h2 className='product text-center text-white'>Card Params</h2>
+                <h2 className='product text-center text-white'>Cards Params</h2>
                 {CARDS_DATA.map((card, i) => (
                         <div key={i}
                             onClick={() => handleClick(card.heading)}

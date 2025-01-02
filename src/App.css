@@ -41,26 +41,6 @@ body {
   max-width: 1128px;
 }
 
-.flex {
-  display: flex;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
 .product {
   font-size: 36px;
   line-height: 49.8px;
@@ -240,6 +220,7 @@ body {
 .custom-table-bg {
   background: #026070 !important;
   border-radius: 12px !important;
+  padding: 51.62px 0 52.47px;
 }
 
 .bg-dark-aqua {
@@ -252,16 +233,15 @@ body {
   border-spacing: 10px 0;
 }
 
-.Competition-td {
+.competition-td {
   padding: 18px 21px;
   border-top: 0.75px solid #000000;
-  border-bottom: 0.75px solid #000000;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.8px;
 }
 
-.Competition-td:last-child {
+.competition-td:last-child {
   background-color: #e8f5e9;
 }
 
@@ -313,14 +293,6 @@ thead tr th {
 }
 
 @media(min-width:640px) {
-  .small-image {
-    max-width: 100.48px;
-  }
-
-  .large-image {
-    max-width: 203.03px;
-  }
-
   .grid-item-1 {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -448,6 +420,13 @@ thead tr th {
 }
 
 @media(min-width:1024px) {
+    .small-image {
+        max-width: 100.48px;
+      }
+    
+      .large-image {
+        max-width: 203.03px;
+      }
   .product {
     padding-bottom: 50px;
     font-size: 46px;
